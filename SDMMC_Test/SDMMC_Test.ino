@@ -33,6 +33,7 @@
 #include "diskio.h"
 #include "ff.h"
 
+// this example is from esp32's test cases. I've adapted this to run in the arduino example so you can cross compare SDMMC vs the SD library so we can bridge the gap
 bool test_rw_speed(const char* filename, void* buf, size_t buf_size, size_t file_size, bool is_write)
 {
     const size_t buf_count = file_size / buf_size;
